@@ -14,5 +14,11 @@ for i in list:
             count += 1
     dict.update({str(i): count})
 
-print(f"\nMost repeated number is {max(dict.keys())} and it repeated {max(dict.values())} times ")
+print(dict)
+
+# print the number(key) which repeated most times
+for key, value in dict.items():
+    if value == max(dict.values()):
+        print(f"\nMost repeated number is {key} and it repeated {max(dict.values())} times ")
+
 
